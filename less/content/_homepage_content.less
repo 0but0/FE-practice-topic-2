@@ -1,3 +1,4 @@
+// Strength section
 .strength {
     padding-top: 15px;
     height: 133px;
@@ -27,6 +28,8 @@
         }
     }
 }
+
+// Banner section
 .banner {
     .banner-col {
         margin: -15px 0;
@@ -166,5 +169,126 @@
                 }
             }
         }
+    }
+}
+
+// News section
+.news {
+    background-image: url('../img/news-bg.png');
+    height: 663px;
+    background-repeat: no-repeat;
+    &-title {
+        text-transform: uppercase;
+        position: relative;
+        font-size: 90px;
+        font-weight: 700;
+        color: @title-bg-color;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 10px;
+        &-front {
+            position: absolute;
+            font-size: 42px;
+            font-weight: 700;
+            color: @title-color;
+            top: 66%;
+            left: 50%;
+            .transformer(translate(-50%, -50%));
+        }
+    }
+    &-list {
+        &-item {
+            .col(33.333%);
+            text-align: left;
+            .item-summary {
+                font-size: 16px;
+                font-weight: 600;
+                height: 71px;
+                width: 311px;
+                color: @title-color;
+                margin-top: 20px;
+            }
+            .item-origin {
+                font-size: 14px;
+                font-weight: 500;
+                color: @summary-color;
+                span {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+}
+
+// Newsletter section
+.newsletter {
+    background-color: @bg-header;
+    height: 400px;
+    text-align: center;
+    padding: 80px 0;
+    box-sizing: border-box;
+    .content {
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+            color: @text-white-color;
+        }
+        .summary {
+            font-size: 14px;
+            font-weight: 500;
+            color: @newsletter;
+            padding-top: 15px;
+            padding-bottom: 60px;
+        }
+    }
+    .email-signup {
+        display: inline-block;
+        align-items: center;
+        form {
+            display: flex;
+            justify-content: center;
+            width: 770px;
+            border: 1px solid @newsletter-border;
+            border-radius: 70px;
+            overflow: hidden;
+            position: relative;
+            .email-signup-input {
+                flex: 1;
+                input {
+                    font-size: 13px;
+                    font-weight: 400;
+                    width: 100%;
+                    border: none;
+                    line-height: 68px;
+                    height: 68px;
+                    padding-left: 30px;
+                }
+            }
+            .email-signup-button {
+                button {
+                    position: absolute;
+                    text-transform: uppercase;
+                    width: 160px;
+                    height: 60px;
+                    background-color: @main-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: @text-white-color;
+                    border: none;
+                    border-radius: 60px;
+                    top: 50%;
+                    right: 1%;
+                    .transformer(translateY(-50%));
+                }
+            }
+        }
+    }
+}
+
+// Brand section
+.brand {
+    padding: 62px 0;
+    &-item {
+        .col(20%);
     }
 }
