@@ -12,11 +12,13 @@
             font-weight: 600;
             color: @title-color;
             text-transform: uppercase;
-            padding-top: 60px;
-            padding-bottom: 30px;
+            padding-top: 53px;
+            padding-bottom: 19px;
         }
         .summary {
             display: flex;
+            line-height: 20px;
+            padding-bottom: 10px;
             &-icon {
                 padding-right: 25px;
                 color: @main-color;
@@ -28,6 +30,7 @@
                 font-size: 13px;
                 font-weight: 500;
                 color: @summary-color;
+                letter-spacing: 0.01em;
             }
         }
         .other-item {
@@ -39,8 +42,13 @@
             }
         }
         .other {
-            padding-bottom: 14px;
+            padding-bottom: 18px;
+            margin-top: -2px;
+            letter-spacing: -0.01em;
         }
+    }
+    .small {
+        padding-left: 114px;
     }
 }
 
@@ -54,6 +62,7 @@
             font-weight: 500;
             text-align-last: left;
             color: @summary-color;
+            letter-spacing: 0.01em;
             span {
                 color: @main-color;
             }

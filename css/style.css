@@ -134,6 +134,8 @@ input {
 }
 .header-bottom-inner .form-control .search {
   width: 556px;
+  padding-right: 3px;
+  padding-bottom: 3px;
 }
 .header-bottom-inner .form-control .search form {
   height: 38px;
@@ -170,6 +172,7 @@ input {
   height: 24px;
   border-left: 1px solid #e0e0e0;
   padding-left: 19px;
+  letter-spacing: 0.01em;
 }
 .header-bottom-inner .form-control .search form .search-button button {
   border: none;
@@ -180,6 +183,7 @@ input {
   line-height: 38px;
   width: 57px;
   text-align: center;
+  padding-right: 8px;
 }
 .header-bottom-inner .form-control .control-item {
   color: #0ca8c9;
@@ -206,6 +210,7 @@ input {
   right: 0;
 }
 .menu-bar {
+  margin-top: 2px;
   padding: 14px 0;
   font-size: 14px;
   font-weight: 600;
@@ -222,20 +227,21 @@ input {
 }
 .menu-bar-inner .menu-category i {
   font-size: 22px;
-  padding-right: 15px;
+  padding-right: 27px;
   vertical-align: bottom;
 }
 .menu-bar-inner nav .nav-icon {
   display: none;
 }
 .menu-bar-inner nav .navbar .nav-item {
-  margin-left: 27px;
+  margin-left: 24px;
   margin-right: 28px;
   display: inline-block;
 }
 .menu-bar-inner nav .navbar .nav-item a {
   text-transform: uppercase;
   color: #fff;
+  letter-spacing: 0.03em;
 }
 .menu-bar-inner nav .navbar .nav-item:last-child {
   margin-right: 0;
@@ -272,9 +278,9 @@ input {
 }
 .slider .slick-prev::before {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f053';
-  font-size: 31px;
+  font-weight: 600;
+  content: '\f104';
+  font-size: 23px;
   color: #082b4f;
   opacity: 1;
   transition: all, 0.5s;
@@ -313,9 +319,9 @@ input {
 }
 .slider .slick-next::before {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f054';
-  font-size: 31px;
+  font-weight: 600;
+  content: '\f105';
+  font-size: 23px;
   color: #082b4f;
   opacity: 1;
   transition: all, 0.5s;
@@ -345,7 +351,7 @@ input {
 }
 .slider-content {
   position: absolute;
-  top: 25%;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -374,6 +380,7 @@ input {
   color: #8f8f8f;
   margin-top: 15px;
   margin-bottom: 47px;
+  letter-spacing: 0.003em;
 }
 .slider-content-inner .slide-btn {
   font-size: 16px;
@@ -383,7 +390,7 @@ input {
   padding-bottom: 5px;
 }
 .strength {
-  padding-top: 15px;
+  padding: 15px 0;
   height: 133px;
   display: flex;
   align-items: center;
@@ -400,9 +407,10 @@ input {
 }
 .strength-item .item-content {
   padding-left: 20px;
+  height: 49px;
 }
 .strength-item .item-content .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #000;
 }
@@ -410,6 +418,7 @@ input {
   font-size: 14px;
   font-weight: 400;
   color: #8f8f8f;
+  letter-spacing: -0.01em;
 }
 .banner .banner-col {
   margin: -15px 0;
@@ -427,6 +436,7 @@ input {
   font-weight: 500;
   font-size: 18px;
   color: #8f8f8f;
+  letter-spacing: -0.02em;
 }
 .banner-left {
   width: 58.3333%;
@@ -437,7 +447,7 @@ input {
 .banner-left-detail {
   position: absolute;
   left: 50%;
-  bottom: 48px;
+  bottom: 45px;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
@@ -446,7 +456,7 @@ input {
   text-align: center;
 }
 .banner-left-detail .banner-countdown {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   justify-content: center;
   display: flex;
 }
@@ -471,6 +481,7 @@ input {
 }
 .banner-left-detail .title {
   margin-bottom: -5px;
+  letter-spacing: 0.01em;
 }
 .banner-right {
   width: 41.6667%;
@@ -485,7 +496,7 @@ input {
 }
 .banner-right-content {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 30px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -496,7 +507,7 @@ input {
 .banner-right-content .sale-number {
   font-size: 60px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 70px;
 }
 .banner-right-content .special {
   font-size: 24px;
@@ -509,19 +520,20 @@ input {
   align-items: center;
 }
 .top-selling .nav-icon {
-  font-size: 32px;
+  font-size: 38px;
   color: #f5f5f5;
 }
 .top-selling .nav-icon .fa-chevron-right {
   color: #0ca8c9;
+  padding-left: 10px;
 }
 .top-selling .title {
   height: 177px;
-  line-height: 177px;
+  line-height: 170px;
   text-transform: uppercase;
   position: relative;
   font-size: 90px;
-  font-weight: 700;
+  font-weight: 600;
   color: #f5f5f5;
 }
 .top-selling .title-front {
@@ -529,7 +541,7 @@ input {
   font-size: 42px;
   font-weight: 700;
   color: #000;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -550,25 +562,29 @@ input {
 .top-selling .product-list-item .product-name {
   margin: auto;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
   width: 191px;
-  margin-top: 20px;
+  margin-top: 8px;
+  letter-spacing: 0.02em;
 }
 .top-selling .product-list-item .product-price {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: #0ca8c9;
-  margin-top: 17px;
-  margin-bottom: 62px;
+  margin-top: 8px;
+  margin-bottom: 55px;
+  letter-spacing: -0.06em;
 }
 .top-selling .product-list-item .product-price span {
   color: #696969;
   text-decoration: line-through;
+  letter-spacing: 0;
+  padding-right: 5px;
 }
 .news {
   background-image: url('../img/news-bg.png');
-  height: 663px;
+  height: 664px;
   background-repeat: no-repeat;
 }
 .news-title {
@@ -578,15 +594,16 @@ input {
   font-weight: 700;
   color: #ebebeb;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 10px;
+  padding-top: 66px;
+  padding-bottom: 23px;
+  letter-spacing: 0.01em;
 }
 .news-title-front {
   position: absolute;
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
-  top: 66%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -603,15 +620,16 @@ input {
 .news-list-item .item-summary {
   font-size: 16px;
   font-weight: 600;
-  height: 71px;
-  width: 311px;
+  height: 60px;
   color: #000;
-  margin-top: 20px;
+  margin-top: 17px;
+  letter-spacing: 0.02em;
 }
 .news-list-item .item-origin {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #8f8f8f;
+  letter-spacing: 0.02em;
 }
 .news-list-item .item-origin span {
   color: #0ca8c9;
@@ -620,8 +638,11 @@ input {
   background-color: #222;
   height: 400px;
   text-align: center;
-  padding: 80px 0;
+  padding: 90px 0;
   box-sizing: border-box;
+}
+.newsletter .content {
+  letter-spacing: -0.02em;
 }
 .newsletter .content .title {
   font-size: 32px;
@@ -632,8 +653,9 @@ input {
   font-size: 14px;
   font-weight: 500;
   color: #d3d3d3;
-  padding-top: 15px;
+  padding-top: 12px;
   padding-bottom: 60px;
+  letter-spacing: 0.01em;
 }
 .newsletter .email-signup {
   display: inline-block;
@@ -658,12 +680,13 @@ input {
   border: none;
   line-height: 68px;
   height: 68px;
-  padding-left: 30px;
+  padding-left: 31px;
+  letter-spacing: 0.05em;
 }
 .newsletter .email-signup form .email-signup-button button {
   position: absolute;
   text-transform: uppercase;
-  width: 160px;
+  width: 169px;
   height: 60px;
   background-color: #0ca8c9;
   font-size: 16px;
@@ -680,7 +703,7 @@ input {
   -o-transform: translateY(-50%);
 }
 .brand {
-  padding: 62px 0;
+  padding: 54px 0;
 }
 .brand-item {
   width: 20%;
@@ -705,11 +728,13 @@ input {
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 53px;
+  padding-bottom: 19px;
 }
 .footer-inner-item .summary {
   display: flex;
+  line-height: 20px;
+  padding-bottom: 10px;
 }
 .footer-inner-item .summary-icon {
   padding-right: 25px;
@@ -722,6 +747,7 @@ input {
   font-size: 13px;
   font-weight: 500;
   color: #8f8f8f;
+  letter-spacing: 0.01em;
 }
 .footer-inner-item .other-item {
   display: flex;
@@ -732,7 +758,12 @@ input {
   padding-right: 20px;
 }
 .footer-inner-item .other {
-  padding-bottom: 14px;
+  padding-bottom: 18px;
+  margin-top: -2px;
+  letter-spacing: -0.01em;
+}
+.footer .small {
+  padding-left: 114px;
 }
 .copyright-inner {
   display: flex;
@@ -746,6 +777,7 @@ input {
   font-weight: 500;
   text-align-last: left;
   color: #8f8f8f;
+  letter-spacing: 0.01em;
 }
 .copyright-inner .content span {
   color: #0ca8c9;
