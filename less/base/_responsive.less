@@ -1,0 +1,91 @@
+@media all and (max-width: 1170px) {
+    
+}
+@media all and (max-width: 1024px) {
+    .header {
+        .logo-mobile {
+            display: block;
+        }
+        &-top {
+            &-inner {
+                .web-info {
+                    &-button {
+                        margin: 0;
+                        .info-content {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            &-inner {
+                .logo {
+                    display: none;
+                }
+                .form-control {
+                    width: 100%;
+                    .search {
+                        width: 100%;
+                        order: 2;
+                    }
+                    .setting {
+                        order: 1;
+                        margin-left: 0;
+                        margin-right: 19px;
+                    }
+                    .cart {
+                        order: 3;
+                    }
+                }
+            }
+        }
+    }
+    .menu-bar {
+        &-inner {
+            nav {
+                .nav-icon {
+                    display: block;
+                }
+                .navbar {
+                    .transit(all, .5s);
+                    .nav-title {
+                        display: block;
+                    }
+                    .transformer(translateX(110%));
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 999;
+                    height: 100vh;
+                    width: 30vw;
+                    background-color: @text-white-color;
+                    -webkit-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    -moz-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    .nav-item {
+                        display: block;
+                        margin: 0;
+                        padding: 10px 15px;
+                        border-bottom: 1px solid #bbb;
+                        a {
+                            color: @main-color;
+                        }
+                    }
+                }
+                .active {
+                    .transformer(translateX(0));
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    
+}
+@media all and (max-width: 576px) {
+    
+}
+@media all and (max-width: 375px) {
+    
+}
