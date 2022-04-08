@@ -1,6 +1,7 @@
-// Strength section
+// ================ Strength section ================ //
 .strength {
-    padding: 15px 0;
+    padding-bottom: 0;
+    padding-top: 15px;
     height: 133px;
     display: flex;
     align-items: center;
@@ -31,7 +32,7 @@
     }
 }
 
-// Banner section
+// ================== Banner section ================= //
 .banner {
     .banner-col {
         margin: -15px 0;
@@ -52,12 +53,21 @@
         letter-spacing: -0.02em;
     }
     &-left {
+        &-inner {
+            height: 100%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
         .col(58.3333%);
         position: relative;
         &-detail {
             position: absolute;
             left: 50%;
-            bottom: 45px;
+            bottom: 40px;
+            width: 100%;
             .transformer(translate(-50%, 0));
             text-align: center;
             .banner-countdown {
@@ -93,7 +103,10 @@
     &-right {
         .col(41.6667%);
         &-item {
-            height: 240px;
+            img {
+                display: block;
+                width: 100%;
+            }
             overflow: hidden;
             position: relative;
             padding: 15px 0;
@@ -117,7 +130,7 @@
     }
 }
 
-// Top selling section
+// ============== Top selling section ============== //
 .top-selling {
     .label {
         .flex();
@@ -131,8 +144,8 @@
         }
     }
     .title {
-        height: 177px;
-        line-height: 170px;
+        height: 151px;
+        line-height: 151px;
         text-transform: uppercase;
         position: relative;
         font-size: 90px;
@@ -143,16 +156,20 @@
             font-size: 42px;
             font-weight: 700;
             color: @title-color;
-            top: 48%;
+            top: 50%;
             .transformer(translateY(-50%));
         }
     }
     .product-list {
+        padding-bottom: 14px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
         &-item {
+            img {
+                width: 100%;
+            }
             .col(25%);
             .product-name {
                 margin: auto;
@@ -160,7 +177,7 @@
                 font-weight: 600;
                 color: @title-color;
                 width: 191px;
-                margin-top: 8px;
+                margin-top: 10px;
                 letter-spacing: 0.02em;
             }
             .product-price {
@@ -168,7 +185,7 @@
                 font-weight: 600;
                 color: @main-color;
                 margin-top: 8px;
-                margin-bottom: 55px;
+                margin-bottom: 25px;
                 letter-spacing: -0.06em;
                 span {
                     color: @reduce-price;
@@ -181,11 +198,11 @@
     }
 }
 
-// News section
+// ================ News section ================ //
 .news {
     background-image: url('../img/news-bg.png');
     height: 664px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     &-title {
         text-transform: uppercase;
         position: relative;
@@ -194,26 +211,29 @@
         color: @title-bg-color;
         text-align: center;
         padding-top: 66px;
-        padding-bottom: 23px;
+        padding-bottom: 7px;
         letter-spacing: 0.01em;
         &-front {
             position: absolute;
             font-size: 42px;
             font-weight: 600;
             color: @title-color;
-            top: 58%;
+            top: 63%;
             left: 50%;
             .transformer(translate(-50%, -50%));
         }
     }
     &-list {
         &-item {
+            img {
+                width: 100%;
+            }
             .col(33.333%);
             text-align: left;
             .item-summary {
                 font-size: 16px;
                 font-weight: 600;
-                height: 60px;
+                padding-bottom: 10px;
                 color: @title-color;
                 margin-top: 17px;
                 letter-spacing: 0.02em;
@@ -231,7 +251,7 @@
     }
 }
 
-// Newsletter section
+// ============== Newsletter section ================ //
 .newsletter {
     background-color: @bg-header;
     height: 400px;
@@ -299,10 +319,13 @@
     }
 }
 
-// Brand section
+// ================ Brand section ============= //
 .brand {
-    padding: 54px 0;
+    padding: 39px 0;
     &-item {
+        img {
+            width: 100%;
+        }
         .col(20%);
     }
 }

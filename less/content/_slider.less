@@ -1,3 +1,4 @@
+// ===================== Slider section ===================== //
 .slider {
     max-height: 750px;
     overflow: hidden;
@@ -79,15 +80,20 @@
     }
     &-item {
         position: relative;
+        img {
+            width: 100%;
+        }
     }
     &-content {
         position: absolute;
-        top: 29%;
+        top: 27%;
         left: 50%;
         .transformer(translate(-50%, 0));
         &-inner {
             .col(58.3333%);
             .slide-title {
+                .transformer(translate(0, -100px));
+                .transit(all, 1s);
                 letter-spacing: 0.01em;
                 font-size: 70px;
                 font-weight: 500;
@@ -98,6 +104,8 @@
                 }
             }
             .slide-summary {
+                .transformer(translate(-100px, 0));
+                .transit(all, 1s);
                 font-size: 18px;
                 font-weight: 500;
                 color: @summary-color;
@@ -106,11 +114,19 @@
                 letter-spacing: 0.003em;
             }
             .slide-btn {
+                display: inline-block;
+                .transformer(translate(0, 100px));
+                .transit(all, 1s);
                 font-size: 16px;
                 font-weight: 600;
                 color: @title-color;
                 border-bottom: 2px solid @main-color;
                 padding-bottom: 5px;
+            }
+
+            // Class for slide animation
+            .active {
+                .transformer(translate(0, 0));
             }
         }
     }

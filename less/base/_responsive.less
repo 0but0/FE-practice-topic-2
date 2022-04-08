@@ -1,7 +1,22 @@
 @media all and (max-width: 1170px) {
-    
+    // =================== Slider section ====================== //
+    .slider {
+        &-content {
+            &-inner {
+                margin-left: 100px;
+                .slide-title {
+                    font-size: 60px;
+                }
+                .slide-summary {
+                    margin-bottom: 15px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 1024px) {
+    // ============== Header section ============== //
     .header {
         .logo-mobile {
             display: block;
@@ -41,6 +56,8 @@
             }
         }
     }
+
+    // ======================== Menu bar section ======================= //
     .menu-bar {
         &-inner {
             nav {
@@ -58,7 +75,7 @@
                     right: 0;
                     z-index: 999;
                     height: 100vh;
-                    width: 30vw;
+                    width: 40vw;
                     background-color: @text-white-color;
                     -webkit-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
                     -moz-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
@@ -79,13 +96,332 @@
             }
         }
     }
+
+    // =================== Slider section ====================== //
+    .slider {
+        &-content {
+            &-inner {
+                width: 66.6667%;
+                .slide-title {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+
+    // ================== Strength section ============= //
+    .strength {
+        height: auto;
+        &-item {
+            width: 50%;
+            .item-icon {
+                width: 41px;
+            }
+        }
+    }
+
+    // =============== Top selling section ================ //
+    .top-selling {
+        .product-list {
+            &-item {
+                width: 33.3333%;
+            }
+        }
+    }
+
+    // ================== News section ================== //
+    .news {
+        height: auto;
+    }
+
+    // ================= Newsletter section ============ //
+    .newsletter {
+        .email-signup {
+            width: 100%;
+            form {
+                width: 100%;
+            }
+        }
+    }
+
+    // ================= Brand section =============== //
+    .brand {
+        &-item {
+            width: 33.333%;
+        }
+    }
+
+    // =============== Footer section =============== //
+    .footer {
+        height: auto;
+        &-inner-item {
+            width: 50%;
+        }
+        .small {
+            padding-left: 15px;
+        }
+    }
 }
 @media all and (max-width: 768px) {
-    
+    // ================== Slider section ================== //
+    .slider {
+        &-content {
+            &-inner {
+                margin-left: 0;
+                .slide-title {
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                .slide-summary {
+                    margin-bottom: 5px;
+                    margin-top: 0;
+                }
+                .slide-btn {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // ================== Banner section ================= //
+    .banner {
+        &-left {
+            width: 100%;
+        }
+        &-right {
+            width: 100%;
+            margin: 0;
+            .banner-col {
+                display: flex;
+                margin: 0 -15px;
+                flex-wrap: wrap;
+            }
+            &-item {
+                .col(50%);
+            }
+            &-content {
+                .sale-number {
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+
+    // =============== Top selling section ================ //
+    .top-selling {
+        .title {
+            font-size: 70px;
+            &-front {
+                font-size: 35px;
+            }
+        }
+        .product-list {
+            &-item {
+                width: 50%;
+            }
+        }
+    }
+
+    // ================== News section ================== //
+    .news {
+        &-title {
+            font-size: 80px;
+            &-front {
+                font-size: 35px;
+            }
+        }
+        &-list {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    // ================= Newsletter section ============ //
+    .newsletter {
+        .content {
+            .title {
+                font-size: 27px;
+            }
+        }
+    }
+
+    // ================ Copyright section ============= //
+    .copyright {
+        .payment-mobile {
+            display: block;
+        }
+        &-inner {
+            img {
+                display: none;
+            }
+            .content {
+                margin: auto;
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
-    
+    // ======================== Header section ===================== //
+    .header {
+        &-bottom {
+            &-inner {
+                .form-control {
+                    .search {
+                        form {
+                            .search-sl {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ================== Slider section ================== //
+    .slider {
+        &-content {
+            top: 15%;
+            &-inner {
+                .slide-title {
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                .slide-summary {
+                    font-size: 13px;
+                }
+                .slide-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    // =========== Strength section ============ //
+    .strength {
+        &-item {
+            width: 100%;
+        }
+    }
+
+    // ============ Banner section ============= //
+    .banner {
+        .title {
+            font-size: 25px;
+        }
+        &-right {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    // =============== Top selling section ================ //
+    .top-selling {
+        .nav-icon {
+            font-size: 30px;
+            .fa-chevron-right {
+                padding-left: 0;
+            }
+        }
+        .title {
+            font-size: 45px;
+            &-front {
+                font-size: 20px;
+            }
+        }
+        .product-list {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    // ================== News section ================== //
+    .news {
+        &-title {
+            font-size: 64px;
+            &-front {
+                font-size: 25px;
+                top: 62%;
+            }
+        }
+        &-list {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    // ================= Newsletter section ============ //
+    .newsletter {
+        .content {
+            .title {
+                font-size: 22px;
+            }
+            .summary {
+                font-size: 12px;
+            }
+        }
+        .email-signup {
+            form {
+                .email-signup-input {
+                    input {
+                        font-size: 12px;
+                    }
+                }
+                .email-signup-button {
+                    button {
+                        font-size: 13px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ================= Brand section =============== //
+    .brand {
+        &-item {
+            width: 100%;
+        }
+    }
+
+    // =============== Footer section =============== //
+    .footer {
+        &-inner-item {
+            width: 100%;
+        }
+    }
 }
 @media all and (max-width: 375px) {
-    
+    // ================== Slider section ================== //
+    .slider {
+        &-content {
+            top: 3%;
+            &-inner {
+                .slide-summary {
+                    padding-bottom: 2px;
+                }
+            }
+        }
+    }
+
+    // ============ Banner section ============= //
+    .banner {
+        &-left {
+            &-detail {
+                .banner-countdown {
+                    span {
+                        margin-bottom: -20px;
+                    }
+                    .time {
+                        width: 50px;
+                        height: 52px;
+                    }
+                }
+            }
+        }
+    }
 }

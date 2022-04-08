@@ -18,6 +18,10 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+    <!-- Sub-element for responsive navbar -->
+    <div class="cover"></div>
+    <!-- End sub-element for responsive navbar -->
+
     <div class="wrapper">
         <!-- Header -->
         <div class="header">
@@ -141,9 +145,9 @@
                     <div class="slider-content container">
                         <div class="row">
                             <div class="slider-content-inner">
-                                <div class="slide-title">Find Any <span>Medicine</span> You Need!</div>
-                                <div class="slide-summary">Free Standard Shipping Everyday</div>
-                                <a href="#" class="slide-btn">Shop Now</a>
+                                <div class="slide-title active">Find Any <span>Medicine</span> You Need!</div>
+                                <div class="slide-summary active">Free Standard Shipping Everyday</div>
+                                <a href="#" class="slide-btn active">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -299,46 +303,69 @@
                             </div>
                             <div class="row">
                                 <div class="product-list">
+                                    <!-- Item 1 -->
                                     <div class="product-list-item">
                                         <img src="img/product-top-one.jpg" alt="">
                                         <div class="product-name">Nature's Bounty Biotin 1000 MCG</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 1 -->
+
+                                    <!-- Item 2 -->
                                     <div class="product-list-item">
                                         <img src="img/product-top-two.jpg" alt="">
                                         <div class="product-name">Best Colon Detox Formula Advanced Colon</div>
                                         <div class="product-price"><span>$35.00</span> $30.00</div>
                                     </div>
+                                    <!-- End item 2 -->
+
+                                    <!-- Item 3 -->
                                     <div class="product-list-item">
                                         <img src="img/product-top-three.jpg" alt="">
                                         <div class="product-name">Natural Factors Vitamin C Blueberry Rasp</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 3 -->
+
+                                    <!-- Item 4 -->
                                     <div class="product-list-item">
                                         <img src="img/product-top-four.jpg" alt="">
                                         <div class="product-name">Jarrow Formulas Methylcobalamin</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 4 -->
+
+                                    <!-- Item 5 -->
                                     <div class="product-list-item">
                                         <img src="img/product-bottom-one.jpg" alt="">
                                         <div class="product-name">Nature's Bounty Biotin 1000 MCG...</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 5 -->
+
+                                    <!-- Item 6 -->
                                     <div class="product-list-item">
                                         <img src="img/product-bottom-two.jpg" alt="">
                                         <div class="product-name">Best Colon Detox Formula Advanced Colon...</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 6 -->
+
+                                    <!-- Item 7 -->
                                     <div class="product-list-item">
                                         <img src="img/product-bottom-three.jpg" alt="">
                                         <div class="product-name">Natural Factors Vitamin C Blueberry Rasp...</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 7 -->
+
+                                    <!-- Item 8 -->
                                     <div class="product-list-item">
                                         <img src="img/product-bottom-four.jpg" alt="">
                                         <div class="product-name">Jarrow Formulas Methylcobalamin</div>
                                         <div class="product-price">$30.00</div>
                                     </div>
+                                    <!-- End item 8 -->
                                 </div>
                             </div>
                         </div>
@@ -354,21 +381,29 @@
                             </div>
                             <div class="news-list">
                                 <div class="row">
+                                    <!-- News one -->
                                     <div class="news-list-item">
                                         <img src="img/first-news.jpg" alt="">
                                         <div class="item-summary">Probiotics may help battle antibiotic resistance Probiotics may help</div>
                                         <div class="item-origin">14 June 2018 by <span>Admin</span></div>
                                     </div>
+                                    <!-- End news one -->
+
+                                    <!-- News two -->
                                     <div class="news-list-item">
                                         <img src="img/second-news.jpg" alt="">
                                         <div class="item-summary">Study oveturns what we know about kidney stones</div>
                                         <div class="item-origin">14 June 2018 by <span>Admin</span></div>
                                     </div>
+                                    <!-- End news two -->
+
+                                    <!-- News three -->
                                     <div class="news-list-item">
                                         <img src="img/third-news.jpg" alt="">
                                         <div class="item-summary">Hair loss: Scientists test wearable re-growth device</div>
                                         <div class="item-origin">14 June 2018 by <span>Admin</span></div>
                                     </div>
+                                    <!-- End news three -->
                                 </div>
                             </div>
                         </div>
@@ -489,13 +524,46 @@
                     <div class="content">@2018 Design by <span>Creative Wp</span>. All Rights Reserved</div>
                     <img src="img/payments.png" alt="">
                 </div>
+                <div class="payment-mobile">
+                    <img src="img/payments.png" alt="">
+                </div>
             </div>
         </div>
         <!-- End copyright -->
     </div>
 
+    <!-- Slick for slider -->
     <script>
-        $('.slider').slick();
+        $('.slider').slick({
+            dots: false,
+            fade: true,
+            responsive: [
+                {
+                breakpoint: 769,
+                settings: {
+                    infinite: true,
+                    arrows: false,
+                }
+                }
+            ]
+        });
+
+        $('.slider').on('afterChange', function () {
+            $('.slider-item').each(function (index, element) {
+                // element == this
+                if ($(this).hasClass('slick-active')) {
+                    $(this).find('.slide-title').addClass('active');
+                    $(this).find('.slide-summary').addClass('active');
+                    $(this).find('.slide-btn').addClass('active');
+                }
+                else {
+                    $(this).find('.slide-title').removeClass('active');
+                    $(this).find('.slide-summary').removeClass('active');
+                    $(this).find('.slide-btn').removeClass('active');
+                }
+            });
+        });
     </script>
+    <!-- End slick for slider -->
 </body>
 </html>
