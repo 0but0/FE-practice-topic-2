@@ -135,12 +135,23 @@
     .label {
         .flex();
     }
-    .nav-icon {
+    .nav-arrows {
+        display: flex;
         font-size: 38px;
         color: @bg-item;
-        .fa-chevron-right {
-            color: @main-color;
-            padding-left: 10px;
+        .transit(all, .5s);
+        .prev {
+            &:hover {
+                color: @main-color;
+                .transit(all, .5s);
+            }
+        }
+        .next {
+            padding-left: 20px;
+            &:hover {
+                color: @main-color;
+                .transit(all, .5s);
+            }
         }
     }
     .title {
@@ -171,27 +182,27 @@
                 width: 100%;
             }
             .col(25%);
-            .product-name {
-                margin: auto;
+            .product-des {
                 font-size: 14px;
                 font-weight: 600;
+                margin-top: 17px;
+                margin-bottom: 25px;
+                .product-name {
+                margin: auto;
                 color: @title-color;
                 width: 191px;
-                margin-top: 10px;
                 letter-spacing: 0.02em;
-            }
-            .product-price {
-                font-size: 14px;
-                font-weight: 600;
-                color: @main-color;
-                margin-top: 8px;
-                margin-bottom: 25px;
-                letter-spacing: -0.06em;
-                span {
-                    color: @reduce-price;
-                    text-decoration: line-through;
-                    letter-spacing: 0;
-                    padding-right: 5px;
+                }
+                .product-price {
+                    color: @main-color;
+                    margin-top: 8px;
+                    letter-spacing: -0.06em;
+                    span {
+                        color: @reduce-price;
+                        text-decoration: line-through;
+                        letter-spacing: 0;
+                        padding-right: 5px;
+                    }
                 }
             }
         }
@@ -288,6 +299,7 @@
             .email-signup-input {
                 flex: 1;
                 input {
+                    outline: none;
                     font-size: 13px;
                     font-weight: 400;
                     width: 100%;

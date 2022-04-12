@@ -5,6 +5,12 @@
     &-inner-item {
         .col(25%);
         text-align: left;
+        a {
+            color: @summary-color;
+            &:hover {
+                color: @main-color;
+            }
+        }
         span {
             color: @main-color;
         }
@@ -42,10 +48,13 @@
                 padding-right: 20px;
             }
         }
-        .other {
+        li {
             padding-bottom: 18px;
             margin-top: -2px;
             letter-spacing: -0.01em;
+            &:last-child {
+                padding-bottom: 0;
+            }
         }
     }
     .small {

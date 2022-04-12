@@ -125,7 +125,11 @@
     .top-selling {
         .product-list {
             &-item {
-                width: 33.3333%;
+                .product-des {
+                    .product-name {
+                        width: auto;
+                    }
+                }
             }
         }
     }
@@ -142,13 +146,6 @@
             form {
                 width: 100%;
             }
-        }
-    }
-
-    // ================= Brand section =============== //
-    .brand {
-        &-item {
-            width: 33.333%;
         }
     }
 
@@ -319,7 +316,7 @@
 
     // =============== Top selling section ================ //
     .top-selling {
-        .nav-icon {
+        .nav-arrows {
             font-size: 30px;
             .fa-chevron-right {
                 padding-left: 0;
